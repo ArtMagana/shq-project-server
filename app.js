@@ -78,7 +78,7 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 app.use(cors({
   credentials: true,
-  origin: ['http://localhost:3000']
+  origin: ['http://localhost:3000', 'https://shq-app-client.herokuapp.com/']
 }));
 
 // ROUTES MIDDLEWARE STARTS HERE:
