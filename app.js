@@ -24,7 +24,9 @@ require('./configs/passport');
 // IF YOU STILL DIDN'T, GO TO 'configs/passport.js' AND UN-COMMENT OUT THE WHOLE FILE
 
 mongoose
-  .connect('mongodb://localhost/project-management-server', {useNewUrlParser: true})
+  .connect('mongodb://route:9564bau30zid31@ds157895.mlab.com:57895/shqdatabase', {
+    useNewUrlParser: true
+  })
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
