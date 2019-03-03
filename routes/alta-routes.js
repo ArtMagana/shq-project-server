@@ -14,6 +14,7 @@ router.post('/altas', (req, res, next)=>{
       name: req.body.name,
       specification: req.body.specification,
       measure: req.body.measure,
+      packing: req.body.packing,
       product: req.body.productID
   })
     .then(response => {

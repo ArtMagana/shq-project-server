@@ -9,6 +9,7 @@ const productSchema = new Schema({
   name: String,
   specification: String,
   measure: String,
+  packing: String,
   altas: [{type: Schema.Types.ObjectId, ref: 'Alta'}],
   owner: {type: Schema.Types.ObjectId, ref: 'User'}
 });
