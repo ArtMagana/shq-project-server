@@ -22,6 +22,7 @@ router.post('/products', (req, res, next) => {
   Product.create({
     name: req.body.name,
     specification: req.body.specification,
+    measure: req.body.measure,
     altas: [],
     owner: req.user._id
   })

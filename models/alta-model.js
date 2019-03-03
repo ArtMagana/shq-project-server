@@ -7,6 +7,7 @@ const Product = require('./product-model');
 const altaSchema = new Schema({
   name: String,
   specification: String,
+  measure: String,
   product: {type: Schema.Types.ObjectId, ref: 'Product'}
 });
 
