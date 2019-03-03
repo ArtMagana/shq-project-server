@@ -8,6 +8,7 @@ const altaSchema = new Schema({
   name: String,
   specification: String,
   measure: String,
+  packing: String,
   product: {type: Schema.Types.ObjectId, ref: 'Product'}
 });
 

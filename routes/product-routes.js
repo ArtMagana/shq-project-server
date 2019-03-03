@@ -23,6 +23,7 @@ router.post('/products', (req, res, next) => {
     name: req.body.name,
     specification: req.body.specification,
     measure: req.body.measure,
+    packing: req.body.packing,
     altas: [],
     owner: req.user._id
   })
