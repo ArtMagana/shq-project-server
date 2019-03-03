@@ -13,6 +13,7 @@ router.post('/altas', (req, res, next)=>{
   Alta.create({
       name: req.body.name,
       specification: req.body.specification,
+      measure: req.body.measure,
       product: req.body.productID
   })
     .then(response => {
