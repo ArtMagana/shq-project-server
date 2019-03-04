@@ -10,6 +10,14 @@ const productSchema = new Schema({
   specification: String,
   measure: String,
   packing: String,
+  code: String,
+  quantity: Number,
+  cost: Number,
+  currency: String,
+  iva: Number,
+  igi: Number,
+  presentation: String,
+  dimensions: Number,
   altas: [{type: Schema.Types.ObjectId, ref: 'Alta'}],
   owner: {type: Schema.Types.ObjectId, ref: 'User'}
 });

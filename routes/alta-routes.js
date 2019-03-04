@@ -15,6 +15,14 @@ router.post('/altas', (req, res, next)=>{
       specification: req.body.specification,
       measure: req.body.measure,
       packing: req.body.packing,
+      code: req.body.code,
+      quantity: req.body.quantity,
+      cost: req.body.cost,
+      currency: req.body.currency,
+      iva: req.body.iva,
+      igi: req.body.igi,
+      presentation: req.body.presentation,
+      dimensions: req.body.dimensions,
       product: req.body.productID
   })
     .then(response => {

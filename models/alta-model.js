@@ -9,6 +9,14 @@ const altaSchema = new Schema({
   specification: String,
   measure: String,
   packing: String,
+  code: String,
+  quantity: Number,
+  cost: Number,
+  currency: String,
+  iva: Number,
+  igi: Number,
+  presentation: String,
+  dimensions: Number,  
   product: {type: Schema.Types.ObjectId, ref: 'Product'}
 });
 
